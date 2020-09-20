@@ -22,7 +22,7 @@ class SaleAdController {
         respond saleAdService.get(id)
     }
 
-    @Secured(["ROLE_ADMIN", 'ROLE_MOD','ROLE_USER'])
+    @Secured(["ROLE_ADMIN", 'ROLE_MOD'])
     def create() {
         respond new SaleAd(params)
     }
