@@ -1,0 +1,314 @@
+{
+	"variables": [],
+	"info": {
+		"name": "COINCOIN_EL_HAROUI_JALAL",
+		"_postman_id": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+		"description": "Postman Echo is service you can use to test your REST clients and make sample API calls. It provides endpoints for `GET`, `POST`, `PUT`, various auth mechanisms and other utility endpoints.\n\nThe documentation for the endpoints as well as example responses can be found at [https://postman-echo.com](https://postman-echo.com/?source=echo-collection-app-onboarding)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "coincoin",
+			"description": "",
+			"item": [
+				{
+					"name": "user",
+					"description": "",
+					"item": [
+						{
+							"name": "user (get/put/patch/delete)",
+							"description": "",
+							"item": [
+								{
+									"name": "http://localhost:8080/api/user/2",
+									"request": {
+										"url": "http://localhost:8081/api/users/2",
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t'username' : 'admina',\n\t'password' : 'test'\n\t\n}"
+										},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/user/2",
+									"request": {
+										"url": "http://localhost:8081/api/user/1",
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/user/1",
+									"request": {
+										"url": "http://localhost:8081/api/user/1",
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "username",
+													"value": "hamid",
+													"description": "",
+													"type": "text"
+												}
+											]
+										},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/user/3",
+									"request": {
+										"url": "http://localhost:8081/api/user/3",
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t'username' : 'admina'\n}"
+										},
+										"description": ""
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "users (post/get)",
+							"description": "",
+							"item": [
+								{
+									"name": "http://localhost:8080/api/users",
+									"request": {
+										"url": "http://localhost:8081/api/users",
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t'username' : 'adminaaaa',\n\t'password' : 'test'\n\t\n}"
+										},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/users",
+									"request": {
+										"url": "http://localhost:8081/api/users",
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {},
+										"description": ""
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "saleAd",
+					"description": "",
+					"item": [
+						{
+							"name": "saleAd (get/put/patch/delete)",
+							"description": "",
+							"item": [
+								{
+									"name": "http://localhost:8080/api/saleAd/1",
+									"request": {
+										"url": "http://localhost:8081/api/saleAd/1",
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"descShort\" : \"adzd\",\n\t\"descLong\" : \"admina11\",\n\t\"title\" : \"admina11\",\n\t\"price\" : 152\n\n}\n"
+										},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/saleAd/1",
+									"request": {
+										"url": "http://localhost:8081/api/SaleAd",
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "username",
+													"value": "hamid",
+													"description": "",
+													"type": "text"
+												}
+											]
+										},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/saleAd/2",
+									"request": {
+										"url": "http://localhost:8081/api/saleAd/2",
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    'descShort' : 'adzd',\n\t'descLong' : 'admina11',\n\t'title' : 'admina11',\n\t'price' : 152,\n\t'dateCreated' : '2020-09-19',\n\t'lastUpdated' : '2020-09-19'\n\n}\n"
+										},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/saleAd/1",
+									"request": {
+										"url": "http://localhost:8081/api/saleAd/1",
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t'title' : 'patchtest',\n\t'price' : '25',\n\t'descShort' : 'azadk',\n\t'descLong' : 'azvmo',\n\t'dateCreated' : '2020-10-10',\n\t'lastUpdated' : '2020-12-12'\n}"
+										},
+										"description": ""
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "saleAds (post/get)",
+							"description": "",
+							"item": [
+								{
+									"name": "http://localhost:8080/api/saleAds",
+									"request": {
+										"url": "http://localhost:8081/api/saleAds",
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {},
+										"description": ""
+									},
+									"response": []
+								},
+								{
+									"name": "http://localhost:8080/api/saleAds",
+									"request": {
+										"url": "http://localhost:8081/api/saleAds",
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"description": ""
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"description": ""
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\": \"apiiiiiiiiiiiiiii\",\r\n    \"descShort\":\"Shortapi\",\r\n    \"descLong\":\"longggggggggggg\",\r\n    \"price\": 11\r\n}"
+										},
+										"description": ""
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
